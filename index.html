@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <title>My first page</title>
-        <style>
-            p {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif};
-        </style>
+        <title>Login page</title>
     </head>
     <body>
-        <button><a href="schedule.html">Schedule</a></button>
-        <button><a href="bio.html">Bio</a></button>
-        <h1>We want to learn front-end!</h1>
-        <h2>Asta este un h2</h2>
-        <p><b>Web app building blocks:</b></p>
-        <hr>
-        <ul>
-            <li><a href="http://google.ro" target="_blank">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"><a href="#">Javascript</a></li>
-        </ul>
-        <a href="www.google.ro">Google it</a>
-        <img src="https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg" alt="un catel alb" height="200px" align="right"/>
-        
-
+        <h1>Login</h1>
+        <form action="./bio.html">
+            <label>Username</label> </br>
+            <input type="text" name ="username" placeholder="Username" required minlength="4">
+            <br>
+            <br>
+            <label>Password</label><br>
+            <input type="password" name="password" placeholder="Password" required minlength="4"><br>
+            <br>
+            <input type="checkbox" id="agree" name="agree" required> <label for="agree">I agree</label>
+            <br><br>
+            <input type="submit" value="Login">
+            </form>
     </body>
 </html>
