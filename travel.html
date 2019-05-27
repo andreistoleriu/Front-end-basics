@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel reservation</title>
+</head>
+
+<body>
+    <section>
+    <h1>Travel reservation form</h1><br>
+    <h3>*denotes mandatory</h3>
+    <form>
+        <label for="fullname">Full name*:</label><br>
+        <input type="text" required placeholder="FirstName LastName" id="fullname" minlength="4" name="input-name"><br>
+        <label for="email">Email address*:</label><br>
+        <input type="email" required placeholder="EMAIL_ADDRESS" id="email" minlength="4" name="input-email"><br>
+        <label>Select Tour Package*:</label><br>
+        <select required name="package">
+            <option>Goa</option>
+        </select><br>
+        <label for="arrival">Arrival Date*</label><br>
+        <input type="date" required name="arrdate" id="arrival"><br>
+        <label for="num-pers">Number of persons*:</label><br>
+        <input type="number" placeholder="UNKNOWN_TYPE" id="num-pers" min="1" name="persons" value="nbpers"><br>
+        <label>What would you like to avail?</label></br>
+        <label for="cb-1">Boarding</label><input type="checkbox" name="sports" id="cb-1" value="cb1"><br>
+        <label for="cb-2">Fooding</label><input type="checkbox" name="sports" id="cb-2" value="cb2"><br>
+        <label for="cb-3">Sight seeing</label><input type="checkbox" name="sports" id="cb-3" value="cb3"><br>
+        <label>Discout Coupon code:</label><br>
+        <input type="text" placeholder="UNKNOWN_TYPE" name="discount"><br>
+        <label>Terms and conditions*</label><br>
+        <label for="tc-opt1">I agree</label><input type="radio" name="tc" id="tc-opt1" checked="checked" value="agree">
+        <label for="tc-opt2">I disagree</label><input type="radio" name="tc" id="tc-opt2" value="disagree"><br><br>
+        <input type="submit" value="Complete reservation" name="submit-button">
+    </form>
+</section>
+</body>
+
+</html>
