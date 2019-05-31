@@ -1,0 +1,29 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.links {
+    color: red;
+}
+
+div {
+    border: 1px solid black;
+}
+
+div > a {
+    color: green;
+}
+
+#red-link {
+    color: red; 
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}

@@ -1,0 +1,26 @@
+input[type="text"] {
+    height: 30px;
+}
+label {
+    display: block;
+}
+
+
+ul li {
+    margin-bottom: 5px;
+}
+
+ul li:nth-child(4n) {
+    color: red;
+}
+
+label::first-letter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+

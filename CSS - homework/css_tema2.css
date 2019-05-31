@@ -1,0 +1,61 @@
+ul li:nth-child(even) {
+    color: green;
+}
+
+ul li:nth-child(3) {
+    background-color: aqua;
+}
+
+ul li:first-child{
+    border-top: 1px solid green;
+}
+
+ul li:last-child {
+    border-bottom: 5px dashed blue;
+}
+
+ul li:nth-child(3) a,
+ul li:nth-child(5) a {
+    color: red;
+}
+
+ul li:nth-child(5) a:hover {
+    color: gray;
+}
+
+ul li:nth-child(2),
+ul li:nth-child(5) {
+    list-style-type: none;
+}
+
+input[type="text"]:focus {
+    background-color: lightgray; 
+}
+
+form div:first-child input {
+    color: green;
+}
+
+form div:nth-child(2) input {
+    color: blue;
+}
+
+/* form div:nth-child(3) input:focus::placeholder {
+    color: transparent;
+}*/
+
+form div:nth-child(3) input {
+    color: transparent;
+}
+
+form div:nth-child(4) input::selection {
+    background: yellow;
+    color: magenta;
+}
+
+form div:nth-child(5) input:hover {
+    color: red;
+}
+
+
+
