@@ -1,0 +1,28 @@
+h1 {
+    border: 2px solid red;
+    background-color: #646;
+    padding: 10px;
+    color: #fff;
+}
+
+ul {
+    margin: 15px;
+    background-color: #DE1E73;
+    list-style-type: square;
+}
+
+
+p::after {
+    content: "";
+    display: block;
+    background-color: #FB1;
+    height: 300px;
+    width: 500px;
+    border: 2px dotted black;
+}
+
+a {
+    /* border-bottom: 2px dashed blue; */
+    background-color: #a1a1a1;
+    text-decoration: underline dotted blue;
+}

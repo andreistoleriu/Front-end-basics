@@ -1,0 +1,41 @@
+.container {
+    position: relative;
+    border: 2px solid lightgreen;
+}
+
+
+nav {
+    position: absolute;
+    width: 150px;
+    border: 2px solid magenta;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: magenta;
+}
+
+nav ul li {
+    padding: 10px 0;
+}
+
+section {
+    margin-left: 155px;
+    padding: 10px 5px;
+    border: 2px solid orange;
+    line-height: 1.5;
+}
+
+.sec-2 {
+    background-color: #eee;
+}
+
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid darkgreen;
+}

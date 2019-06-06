@@ -1,0 +1,87 @@
+* {
+color: #d6e6ff;
+}
+
+body {
+    background-color: #032e72;
+    font-family: 'Lato';
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+.container {
+    max-width: 768px; 
+    margin: auto;
+}
+
+.lab3 {
+font-size: 18px;
+}
+
+
+input {
+    background-color: #032e72;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] 
+{
+    width: 100%;
+    border: 1px solid white;
+    padding: 7px 5px;
+    border-radius: 7px;
+    margin: 5px 0 20px 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: 0;
+    box-shadow: 0 0 10px lightskyblue;;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    background-color: #032e72;
+    color: white;
+}
+
+textarea:focus {
+    outline: 0;
+    box-shadow: 0 0 5px lightskyblue;;
+}
+
+
+input[type="file"] {
+    display: block;
+    margin: 5px 0;
+}
+
+select {
+    background-color: #032e72;
+    display: block;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 5px 25px;
+    border: 1px solid white;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: #032e72;
+}
+
