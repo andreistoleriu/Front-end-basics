@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.top-container, .bottom-container {
+    display: flex;
+}
+
+#appetizers {
+    background: url('img/appetizers.jpg') no-repeat;
+    background-size: cover;
+    height: 48vh;
+    flex: 1 48vw;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 2% 2% 0;
+}
+
+#breads {
+    background: url('img/breads.jpg') no-repeat;
+    background-size: cover;
+    height: 48vh;
+    flex: 1 48vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+#drinks {
+    background: url('img/drinks.jpg') no-repeat;
+    background-size: cover;
+    height: 48vh;
+    flex: 1 48vw;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 2%;
+}
+
+#fast {
+    background: url('img/fast.jpg') no-repeat;
+    background-size: cover;
+    height: 48vh;
+    flex: 1 48vw;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+p {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    font-size: 40px;
+    background:rgba(122, 122, 122, 0.5);
+    width: 100%;
+
+
+}
+
+@media (max-width: 720px) {
+    .top-container, .bottom-container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    #appetizers, #breads, #drinks, #fast {
+        margin: 0;
+        height: 20%;
+    }
+}
