@@ -1,0 +1,14 @@
+body {
+    height: 700px;
+}
+.girafa {
+    height: 700px;
+    background-image: url("girafa.jpeg");
+    background-clip: content-box;
+    border: 15px dotted red;
+    padding: 30px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
