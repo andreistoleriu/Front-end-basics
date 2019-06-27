@@ -48,16 +48,16 @@
 
 //obiect -> cheie-valoare
 
-var diferenta = function (a, b) {
-    return a-b;
-}
+// var diferenta = function (a, b) {
+//     return a-b;
+// }
 
-console.log(diferenta(7, 5));
+// console.log(diferenta(7, 5));
 
 
-function diff(a, b) {
-    const diff = a - b;
-    console.log("diff=", diff);
-}
-diff(10, 5);
+// function diff(a, b) {
+//     const diff = a - b;
+//     console.log("diff=", diff);
+// }
+// diff(10, 5);
 
