@@ -12,12 +12,18 @@ var numbers = createArray(1,50);
 console.log(numbers);
 
 //primele 10 elemente
-function isSmallerThan10 (value) {
-    return value <=10;
-}
 
-const result1 = numbers.filter(isSmallerThan10);
+const result1 = numbers.slice(0, 10);
 console.log(result1);
+
+
+// function isSmallerThan10 (value) {
+//     return value <=10;
+// }
+
+// const result1 = numbers.filter(isSmallerThan10);
+// console.log(result1);
+
 
 //obiect cu nume si prenume
 var obj = {
