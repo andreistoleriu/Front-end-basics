@@ -63,3 +63,16 @@ function splitWords (str) {
 var stringToSplit = 'Ana are multe mere';
 
 splitWords(stringToSplit);
+
+
+//creati o fn numita makeDiff
+
+const diff10 = makeDiff(10);
+console.log(diff10(3));
+
+function makeDiff(d) {
+    function inner (s) {
+        return d-s;
+    }
+    return inner;
+}
