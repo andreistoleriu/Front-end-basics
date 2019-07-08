@@ -26,17 +26,11 @@ function createBankAccount(name, initBalance) {
   }
   function showName() {
     console.log("Account name is " + name);
-  }
-  function transferMoney(amount, account) {
-      balance = balance - amount;
-      account.deposit(amount);
-  }
-  
+  }  
   return {
     withdraw,
     deposit,
     showBalance,
     showName,
-    transferMoney,
   };
 }
