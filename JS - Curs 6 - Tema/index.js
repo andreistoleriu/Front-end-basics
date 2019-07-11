@@ -37,8 +37,13 @@ function createBankAccount(name) {
       amount,
       Date: Date.now()
     };
+
     accountInfo.transactionsLog.push(input);
   }
+
+  function numOfTransactions(param) {
+    accountInfo.transactionsLog.splice(param);
+}
 
   return {
     getAccountInfo,
@@ -47,12 +52,14 @@ function createBankAccount(name) {
     showBalance,
     showName,
     transferMoney,
-    accountHistory
+    accountHistory,
+    numOfTransactions,
   };
 }
 
 var bankAcc = createBankAccount("Andrei", 1000);
 var secondAcc = createBankAccount("Costel", 1000);
+
 
 bankAcc.deposit(1000);
 bankAcc.withdraw(700);
@@ -62,6 +69,9 @@ bankAcc.deposit(300);
 bankAcc.withdraw(150);
 bankAcc.withdraw(200);
 bankAcc.transferMoney(450, secondAcc)
+
+bankAcc.numOfTransactions(3);
+
 console.log(bankAcc.getAccountInfo());
 
 secondAcc.deposit(2000);
@@ -69,7 +79,11 @@ secondAcc.transferMoney(1800, bankAcc);
 secondAcc.deposit(1500);
 secondAcc.withdraw(300);
 
+secondAcc.numOfTransactions(3);
+
 console.log(secondAcc.getAccountInfo());
+
+
 
 
 
