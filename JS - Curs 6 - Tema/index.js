@@ -39,6 +39,7 @@ function createBankAccount(name) {
     };
 
     accountInfo.transactionsLog.push(input);
+    
   }
 
   function numOfTransactions(param) {

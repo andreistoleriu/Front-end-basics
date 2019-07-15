@@ -3,18 +3,18 @@
 // gaseste cel mai lung cuvant din acest sir. Daca doua cuvinte au aceeasi
 // lungime returnati primul cuvant cu acea lungime.
 
-function isLongestWord(strToSplit) {
-    var splitString = strToSplit.split(' ');
-    var longestWord = 0;
+// function isLongestWord(str) {
+//     var strSplit = str.split(' ');
+//     var longestWord = 0;
+//     for(var i = 0; i < strSplit.length; i++){
+//       if(strSplit[i].length > longestWord){
+//       longestWord = strSplit[i].length;
+//        }
+//     }
+//     return longestWord;
+//   }
 
-    for(var i=0; i<splitString.length; i++) {
-        if(splitString[i].length > longestWord);
-        longestWord = splitString[i];
-    }
-return longestWord;
-}
-
-console.log(isLongestWord('unu doi patru trei doi'));
+// console.log(isLongestWord('unu doi patru trei doi'));
 
 // 2.
 // Scrieti o functie care sa aiba output-ul asta
@@ -24,12 +24,12 @@ console.log(isLongestWord('unu doi patru trei doi'));
 // * * * *
 // * * * * *
 
-for(var i = 1; i <= 5; i++) {
-    for(var j = 1; j<= i; j++) {
-      document.write("*");  
-    }
-    document.write("<br/>");
-}
+// for(var i = 1; i <= 5; i++) {
+//     for(var j = 1; j<= i; j++) {
+//       document.write("*");  
+//     }
+//     document.write("<br/>");
+// }
 
 // 3.
 // Creati o functie care primeste o lista de persoane de forma {name, age} si
@@ -37,7 +37,20 @@ for(var i = 1; i <= 5; i++) {
 // incat conditia de filtrare sa poate fi controlata printr-o functie
 // pasata ca argument.
 
+// var persons = [
+//   {"Name": 'Person1', 'Age': 15},
+//   {"Name": 'Person2', 'Age': 24},
+//   {"Name": 'Person3', 'Age': 19},
+//   {"Name": 'Person4', 'Age': 18},
+//   {"Name": 'Person5', 'Age': 14},
+//   {"Name": 'Person6', 'Age': 32}
+// ];
 
+// var isEighteen = function(persons) {
+//   return persons.Age > 18;
+// };
+
+// console.log(persons.filter(isEighteen));
 
 
 
@@ -53,11 +66,18 @@ for(var i = 1; i <= 5; i++) {
 // Scrieti o functie care sa scoata literele/cifrele duplicate dintr-un
 // string/numar.
 
+// function removeDuplicates(str) {
+//     var unique = '';
+//     for (var i = 0; i < str.length; i++) {
+//       if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+//         unique += str[i];
+//       }
+//     }
+//     return unique;
+// }
 
-
-
-// removeDuplicates('aabcdeef') -> 'abcdef'
-// removeDuplicates(122334) - 1234
+// console.log(removeDuplicates('abecede'));
+// console.log(removeDuplicates('121324'));
 
 
 
@@ -65,21 +85,21 @@ for(var i = 1; i <= 5; i++) {
 // 6.
 // Creati o functie care returneaza al N-lea numar din seria lui Fibonacci.
 
-function fibonacci (n) 
-{
-  if (n===1) 
-  {
-    return [0, 1];
-  } 
-  else 
-  {
-    var s = fibonacci(n - 1);
-    s.push(s[s.length - 1] + s[s.length - 2]);
-    return s;
-  }
-};
+// function fibonacci (n) 
+// {
+//   if (n===1) 
+//   {
+//     return [0, 1];
+//   } 
+//   else 
+//   {
+//     var prevNum = fibonacci(n - 1);
+//     prevNum.push(prevNum[prevNum.length - 1] + prevNum[prevNum.length - 2]);
+//     return prevNum;
+//   }
+// };
 
- console.log(fibonacci(7));
+//  console.log(fibonacci(7));
  
 
 
@@ -89,12 +109,12 @@ function fibonacci (n)
 // 7.
 // Creati o functie care ridica la patrat fiecare cifra a unui numar.
 
-var numbers = [3,4,6,7];
-var newArray = numbers.map(isSquareNum);
-function isSquareNum(num) {
-    return num * num;
-}
-console.log(newArray);
+// var numbers = [3,4,6,7];
+// var newArray = numbers.map(isSquareNum);
+// function isSquareNum(num) {
+//     return num * num;
+// }
+// console.log(newArray);
   
 
 // squareDigits(943) -> 81169; 9*9 = 81, 4 * 4 = 16, 3 * 3 = 9
@@ -106,12 +126,12 @@ console.log(newArray);
 // functie cu un parametru de tip numar. Functia copil returneaza suma
 // dintre argumentul primei functii si argumentul ei.
 
-function isSum(x) {
-    return function (y) {
-        return x + y;
-    }
-}
-console.log(isSum(3)(4));
+// function isSum(x) {
+//     return function (y) {
+//         return x + y;
+//     }
+// }
+// console.log(isSum(3)(4));
 
 // const add3 = makeAdder(3)
 // const add5 = makeAdder(5)
