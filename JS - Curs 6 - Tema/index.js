@@ -4,6 +4,7 @@ function createBankAccount(name) {
     balance: 100,
     transactionsLog: []
   };
+  
   function getAccountInfo() {
     return accountInfo;
   }

@@ -69,7 +69,7 @@
 // function removeDuplicates(str) {
 //     var unique = '';
 //     for (var i = 0; i < str.length; i++) {
-//       if (str.lastIndexOf(str[i]) == str.indexOf(str[i])) {
+//       if (str.lastIndexOf(str[i]) === str.indexOf(str[i])) {
 //         unique += str[i];
 //       }
 //     }
@@ -145,3 +145,12 @@
 // functiile din acest array ar trebui sa logam la consola numerele de la
 // 0 la N.
 
+function buildFun(n) {
+    const result = [];
+
+    for(var i = 0; i < n; i++) {
+        result.push(function() {
+            console.log(i);
+        }
+    }
+}
