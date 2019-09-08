@@ -1,0 +1,31 @@
+}#btn {
+    background-color:white;
+    color: green;
+    border: 3px solid green;
+    border-radius: 30%;
+    padding: 20px;
+}
+
+.line-loader {
+    width: 30px;
+    height: 30px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: #353535 transparent #353535;
+    animation: circle 2s linear infinite;
+    display: inline-block;
+  }
+  
+  @-webkit-keyframes circle {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes circle {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }

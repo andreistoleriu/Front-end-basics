@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+input, label, h1 {
+    display: block;
+    margin: 15px;
+}
+
+input, button {
+    min-width: 500px;
+    min-height: 50px;
+}
+
+button {
+    margin: 15px;
+    background-color: lightgrey;
+    border: 1px solid lightgrey;
+    font-size: 40px;
+    display:flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    background-color: blue;
+    border: 1px solid blue;
+}
